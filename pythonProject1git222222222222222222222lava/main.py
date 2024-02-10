@@ -1,20 +1,20 @@
 import pygame
 
 
-a = int(input("Enter int1: "))
-b = int(input("Enter int2: "))
+a = float(input("Enter int1: "))
+b = float(input("Enter int2: "))
 res = a + b
 
-WINDOW_WIDTH = 600
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 1920
+WINDOW_HEIGHT = 1080
 FPS = 60
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-# imp = pygame.image.load("C:\\Users\\Think Admin\\Downloads\\python.png").convert()
+imp = pygame.image.load("C:\\Users\\Think Admin\\Downloads\\python.png").convert()
 
 pygame.init()
 font = pygame.font.SysFont(None, 100)
 text = font.render(f'{res}', True, "black")
-
+imp = pygame.transform(imp)
 
 
 clock = pygame.time.Clock()
